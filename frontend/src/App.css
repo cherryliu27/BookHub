@@ -1,0 +1,344 @@
+/* --------------------------- */
+/*  RESETS ------------------- */
+/* --------------------------- */
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, h5, p, figure, picture{
+    margin: 0;
+    padding:0;
+}
+
+body {
+    line-height: 1.5;
+    min-height: 100vh;
+    background: url("./images/gradient-bkg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: "Poppins", sans-serif;
+}
+
+img, picture{
+    max-width: 100%;
+    display: block;
+}
+
+input, button, textarea, select{
+    font: inherit;
+}
+
+/* --------------------------- */
+/*  PAGE STYLING (HOME)------- */
+/* --------------------------- */
+
+.container{
+  text-align: center;
+  min-height: calc(100vh - 70px);
+}
+
+.home{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1, .cta a{
+  font-family: "Syncopate", "sans-serif"
+}
+
+.home h1{
+  font-size: 4rem;
+}
+
+.home h1 span{
+  display: block;
+  font-weight: bold;
+}
+
+.home p{
+  font-weight: light;
+  font-size: 1.5rem;
+  padding-top: 3.125rem;
+  padding-bottom:4.375rem;
+}
+
+
+.cta{
+  display: flex;
+  gap:3.75rem;
+  justify-content: center;
+}
+
+.cta a{
+  text-decoration: none;
+  padding: 1.125rem 1.875rem;
+  border-radius: 2.25em;
+  display: inline-block;
+  font-size: 1.25rem;
+}
+
+.cta a:first-of-type{
+  color: #fff;
+  background-color: #000;
+  border: solid 2px #000;
+  transition: transform 0.3s;
+
+}
+
+.cta a:nth-of-type(2){
+  color: #000;
+  background-color: transparent;
+  border: solid 2px #000;
+  transition: transform 0.3s;
+
+}
+
+.cta a:first-of-type:hover {
+  background:transparent;
+  color: #000;
+  border: 2px solid #000;
+  transform: scale(1.03);
+}
+
+.cta a:nth-of-type(2):hover{
+  color: #fff;
+  background-color: #000;
+  border: solid 2px #000;
+  transform: scale(1.03);
+
+}
+
+
+/* --------------------------- */
+/*  PAGE STYLING (HOME) ------ */
+/* --------------------------- */
+
+.books h1, .add h1{
+  font-weight: bold;
+  font-size: 1.875rem;
+  padding-top: 3.43rem;
+}
+
+.books p, .add p{
+  font-weight: light;
+  font-size: 1.125rem;
+  margin-top: 0.75rem;
+  margin-bottom: 1.5rem
+}
+
+.add-form{
+  display: flex;
+}
+
+.search{
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.search label, .add label{
+  font-family: "Poppins","sans-serif";
+  text-transform: uppercase;
+  font-weight: 550;
+}
+
+.search input, .search select{
+  border-radius: 2.375em;
+  border: 1px solid #000;
+  height: 2.8rem;
+  padding: 0.625rem 1.2rem;
+  background-color: white;
+  max-width: 235px;
+}
+
+
+.add-form .search:nth-of-type(2) input{
+  max-width: 195px;
+}
+
+.booksbtns{
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.search-container{
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.search-form{
+  display: flex;
+  gap: 1.875rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.books button, .add button{
+  padding: 10px 28px;
+  border: 1px solid #000;
+  border-radius: 2.375rem;
+}
+
+.books button:nth-of-type(2){
+  color: #fff;
+  background: #000;
+}
+.books button:first-of-type{
+  color: #000;
+  background: transparent;
+}
+
+.books button:nth-of-type(2) a{
+  color: #fff;
+  text-decoration:none;
+}
+
+.books button:first-of-type:hover{
+  background-color: #000;
+  color: #fff;
+}
+
+.books button:nth-of-type(2):hover {
+  background-color: transparent;
+}
+
+.books button:nth-of-type(2):hover a {
+  color: #000;
+}
+
+table{
+  border-radius: 1.875rem !important;
+  max-width: 90%;
+  margin: 0 auto;
+  margin-top: 2.5rem;
+
+}
+
+.custom-table thead th {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+.no-match{
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* --------------------------- */
+/*  PAGE STYLING (ADD)-------- */
+/* --------------------------- */
+
+
+.add{
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.add-form{
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-top: -0.5rem;
+}
+
+.add-field{
+  display: flex;
+  flex-direction: column;
+  height: 95px;
+  position: relative;
+  /* max-width: 600px; */
+
+}
+
+
+.add-field input,
+.add-field select {
+  height: 45px;
+  padding: 0 1rem;
+  border: 1px solid #000;
+  width: 100%;
+}
+
+.add-field label, .add-field .validation{
+  text-align: left;
+}
+
+
+.add-field span, .validation{
+  color: red;
+}
+
+
+.validation{
+position: absolute;
+bottom: 0;
+font-size: 0.875rem;
+}
+
+.add-row .add-field {
+  width: 48%;
+}
+
+.add select{
+  background-color: #fff;
+}
+
+.add-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.3rem;
+}
+
+.add-row .add-field {
+  width: 48%;
+}
+
+.add button{
+  margin-top: 0.81rem;
+  background-color: #000;
+  color: #fff;
+  margin-bottom: 2rem;
+  transition: transform 0.2s;
+  border: 1px solid #000
+
+}
+
+.add button:hover{
+  transform: scale(1.1);
+  background-color: transparent;
+  color: #000;
+  border: 1px solid #000
+
+}
+
+/* --------------------------- */
+/*  MEDIA QUERY--------------- */
+/* --------------------------- */
+
+@media(max-width: 780px){
+  .home h1{
+    font-size: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cta{
+    display: flex;
+    gap:1.75rem;
+    justify-content: center;
+  }
+
+  .container{
+    padding: 0 40px;
+  }
+}
+
