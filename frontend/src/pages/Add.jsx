@@ -40,7 +40,7 @@ export default function Add(){
 
         //Validation on Publication date
         if (!book.publication_date) {validationError.publication_date = "Publication Date is required." ;}
-        else if (new Date(book.publication_date) > new Date()) {validationError.publication_date = "Publication Date cannot be in the future."}
+        else if (new Date(book.publication_date) > new Date()) {validationError.publication_date = "Date cannot be in the future."}
 
         // Validation on ISBN
         if(!book.isbn){validationError.isbn = "ISBN is required."} 
