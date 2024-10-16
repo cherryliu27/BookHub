@@ -81,7 +81,7 @@ export default function Add(){
                 <div class="add-row">
                     <div class="add-field">
                         <label htmlFor="genre">Genre:<span> *</span></label>
-                        <select name="genre" id="genre" onChange={handleChange} value="">
+                        <select name="genre" id="genre" onChange={handleChange} value={book.genre}>
                             <option value="">Select Genre</option>
                             {genres.map((genre)=>(
                                 <option value={genre}>{genre}</option>
